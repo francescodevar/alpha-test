@@ -1,0 +1,132 @@
+.navbar__container{
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;       
+  display: flex;
+  z-index: 1001;
+  animation: navbarScroll 1s linear both;
+  animation-timeline: scroll(block);
+  animation-range: 0px 50px;
+}
+
+@keyframes navbarScroll {
+  0% {
+    background: transparent;
+    box-shadow: none;
+  }
+  100% {
+    background: rgb(255, 255, 255); 
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.04);
+  }
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;  
+  align-items: center;
+  width: 100%;
+  padding: 1.8rem 2rem;
+  max-width: 129.1rem;   
+}
+
+.navbar__logo img {
+  height: 4rem;
+  width: auto;
+}
+
+.navbar__links {
+  position: fixed;
+  top: 0;
+  right: -100%;
+  width: 100%;
+  height: 100vh;
+  background: var(--purple-dark-brand);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  transition: right 0.3s ease;
+  z-index: 1000;
+}
+
+.navbar__links.active {
+  right: 0;
+}
+
+.navbar__item {
+  font-size: 1.8rem;
+  color: #fff;
+  transition: color 0.2s ease;
+  cursor: pointer;
+}
+
+.navbar__item:hover {
+  color: var(--purple-brand);
+}
+
+.navbar__toggle {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  z-index: 1001;
+}
+
+.navbar__toggle span {
+  width: 24px;
+  height: 3px;
+  background: var(--purple-brand);
+  transition: 0.3s;
+}
+
+.navbar__toggle.active span:nth-child(1) {
+  transform: rotate(45deg) translate(7px, 7px);
+  background-color: var(--white-brand);
+}
+
+.navbar__toggle.active span:nth-child(2) {
+  opacity: 0;
+}
+
+.navbar__toggle.active span:nth-child(3) {
+  transform: rotate(-45deg) translate(7px, -7px);
+  background-color: var(--white-brand);
+}
+
+@media (min-width: 768px) {
+  .navbar {
+    padding: 2.2rem 8.2rem;
+  }
+
+  .navbar__logo img {
+    height: 6.2rem;
+    width: auto;
+  }
+}
+
+@media (min-width: 1024px) {
+  .navbar__links {
+    display: flex;       
+    position: static;    
+    right: auto;     
+    height: auto;
+    flex-direction: row;
+    gap: 3.6rem;
+    background: transparent;
+    justify-content: end;
+  }
+
+  .navbar__item {
+    font-size: 1.4rem;
+    color: var(--text-color);
+  }
+
+  .navbar__toggle {
+    display: none;
+  }
+}

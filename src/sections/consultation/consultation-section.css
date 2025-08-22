@@ -1,0 +1,269 @@
+.consultation-section {
+  position: relative;
+  width: 100%;
+  background-color: #f9f9f9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  padding: 4rem 4.7rem 7rem 4.7rem;
+}
+
+.consultation-decorative-circle-right-top {
+  position: absolute;
+  width: 13rem;
+  height: 13rem;
+  top: 8rem;
+  right: -6.5rem;
+  border-radius: 50%;
+  border: 18px solid white;
+}
+
+.consultation-decorative-circle-left {
+  position: absolute;
+  width: 16rem;
+  height: 16rem;
+  top: 2rem;
+  left: -3.5rem;
+  border-radius: 50%;
+  border: 20px solid white;
+}
+
+
+.consultation-content-container {
+  width: 100%;
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.consultation-title  {
+  font-family: 'Libre Baskerville', serif;
+  font-weight: 400;
+  font-size: 2.4rem;
+  text-align: start; 
+  margin-bottom: 5rem;
+}
+
+.consultation-title span {
+  color: var(--purple-brand);
+  font-size: inherit;
+}
+
+.consultation-cards-container {
+  display: flex;
+  flex-direction: column;
+  gap: 3.9rem;
+  margin-bottom: 5.4rem;
+  justify-content: center;
+}
+
+.consultation-card {
+  background-color: white;
+  border-radius: 20px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1.2rem 0 2rem 0;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.04);
+}
+
+.consultation-card-header {
+  margin-bottom: 1.6rem;
+}
+
+.consultation-card-title {
+  font-family: 'Libre Baskerville', serif;
+  font-weight: 400;
+  font-size: 1.8rem;
+  text-align: center;
+}
+
+.bmi-title {
+  color: var(--blue-brand);
+}
+
+.vital-title {
+  color: var(--purple-brand);
+}
+
+.consultation-card-divider {
+  width: 90%;
+  height: 1px;
+  background-color: #B1E2FF;
+  margin-bottom: 24px;
+}
+
+.consultation-card:nth-child(2) .consultation-card-divider {
+  background-color: #FFB7F0
+}
+
+.consultation-card-content {
+  width: 100%;
+  padding: 0 1.2rem;
+}
+
+.consultation-feature-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+}
+
+.consultation-feature-list li {
+  font-size: 1.4rem;
+  position: relative;
+  padding-left: 20px;
+}
+
+.consultation-feature-list li::before {
+  content: '•';
+  color: #5b5b5b;
+  font-weight: bold;
+  position: absolute;
+  left: 0;
+}
+
+@media (min-width: 768px) {
+  .consultation-section {
+    padding: 6rem 0 8rem 0;
+  }
+  
+  .consultation-decorative-circle-left {
+    width: 40rem;
+    height: 40rem;
+    top: 50rem;
+    left: -24rem;
+    border-width: 21px;
+  }
+  
+  .consultation-decorative-circle-right-top {
+    width: 24rem;
+    height: 24rem;
+    top: 40rem;
+    right: -12rem;
+    border-width: 24px;
+  }
+  
+
+  .consultation-content-container {
+    max-width: 44rem;
+  }
+  
+  .consultation-title {
+    font-size: 3.2rem;
+    margin-bottom: 4.4rem;
+  }
+  
+  .consultation-cards-container {
+    width: 100%;
+    margin-bottom: 4.4rem;
+  }
+  
+  .consultation-card {
+    width: 100%;
+    padding: 3.6rem 0;
+  }
+  
+  .consultation-card-header {
+    margin-bottom: 1.6rem;
+  }
+  
+  .consultation-card-title {
+    font-size: 2.4rem;
+  }
+  
+  .consultation-card-divider {
+    width: 100%;
+    max-width: 28rem;
+  }
+  
+  .consultation-card-content {
+    max-width: 28rem;
+  }
+  
+  .consultation-feature-list {
+    gap: 2rem;
+  }
+  
+  .consultation-feature-list li {
+    font-size: 1.4rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .consultation-section {
+    width: 100%;
+    padding: 12rem 8.7rem 6rem 8.7rem;
+  }
+  
+  .consultation-content-container {
+    max-width: 114rem;
+  }
+
+  .consultation-decorative-circle-right-top {
+    width: 28rem;
+    height: 28rem;
+    top: 8rem;
+    right: 10rem;
+    border-width: 28px;
+  }
+  
+  .consultation-decorative-circle-left {
+    width: 386px;
+    height: 386px;
+    top: 192px;
+    left: -193px;
+    border-width: 28px;
+  }
+  
+  .consultation-title {
+    margin-bottom: 6.4rem;
+  }
+  
+  .consultation-cards-container {
+    flex-direction: row;
+    gap: 10rem;
+    margin-bottom: 8.8rem;
+    justify-content: center; 
+  }
+  
+  .consultation-card {
+    width: 100%;
+    max-width: 44rem;
+    padding: 2.8rem 2.4rem 6.4rem 2.4rem;
+  }
+  
+  .consultation-card-header {
+    margin-bottom: 3.8rem;
+  }
+  
+  .consultation-card-divider {
+    width: 100%; 
+    max-width: 36rem;
+  }
+  
+  .consultation-card-content {
+    max-width: none;
+  }
+  
+  .consultation-feature-list {
+    gap: 2rem;
+  }
+  
+  .consultation-feature-list li {
+    font-size: 1.6rem;
+  }
+
+  .consultation-decorative-circle-right-bottom {
+    position: absolute;
+    width: 16rem;
+    height: 16rem;
+    top: 42rem;
+    right: 28rem;
+    border-radius: 50%;
+    border: 28px solid white;
+  }
+  
+}

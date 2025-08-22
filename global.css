@@ -1,0 +1,87 @@
+* { margin: 0; 
+  padding: 0; 
+  box-sizing: border-box; 
+  font-size: 10px;
+  scroll-behavior: smooth;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+span,
+button{
+  line-height: 160%;
+}
+
+body {
+  font-family: 'Montserrat';
+  color: var(--text-color);
+}
+
+:root {
+  --text-color: #333333;
+  --yellow-brand: #FFD900;
+  --purple-brand: #DD71C6;
+  --purple-dark-brand: #b2469b;
+  --sky-blue-brand: #73C3F4;
+  --blue-brand: #0083d3;
+  --white-brand: #fff;
+  --yellow-dark-brand: #b9a328;
+}
+
+
+body.preload {
+  opacity: 0;
+  animation: fadeIn 1s ease-in forwards; 
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+
+.button-primary, .button-secondary {
+  border: none;
+  padding: 1rem 1.4rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  width: fit-content;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  color: var(--white-brand) ;
+  font-size: 1.6rem;
+  text-align: center;
+}
+
+.button-primary {
+  background-color: var(--purple-brand);
+}
+
+.button-secondary {
+  background-color: var(--yellow-brand);
+}
+
+.button-primary:hover {
+  background-color: var(--purple-dark-brand);
+}
+
+.button-secondary:hover {
+  background-color: var(--yellow-dark-brand);
+}
+
+.button-primary:active {
+  scale: 0.95;
+}

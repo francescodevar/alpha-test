@@ -1,0 +1,366 @@
+.footer {
+  position: relative;
+  display: flex;
+  overflow: hidden;
+  flex-direction: column;
+  background-color: #F9F9F9;
+  padding: 6.4rem 2rem 2rem 2rem;
+  align-items: start;
+}
+
+.footer-decorative-circle-right{
+  position: absolute;
+  width: 17rem;
+  height: 17rem;
+  top: 50rem;
+  right: -8rem;
+  border-radius: 50%;
+  border: 20px solid white;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  max-width: 30rem;
+  z-index: 10;
+}
+
+.logo-section {
+  display: flex;
+  justify-content: flex-start; 
+  margin-bottom: 3.4rem;
+  width: 100%; 
+}
+
+.logo {
+  width: 16rem;
+  height: auto;
+}
+
+.description {
+  color: var(--muted-foreground);
+  font-size: 1.4rem;
+  margin-bottom: 4.2rem;
+  text-align: left;
+}
+
+.contact-info {
+  margin-bottom: 3.2rem;
+  width: 100%; 
+}
+
+.contact-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.2rem;
+  margin-bottom: 1.6rem;
+  justify-content: flex-start;
+}
+
+.contact-item:last-child {
+  margin-bottom: 0;
+}
+
+.icon {
+  width: 2rem;
+  height: 2rem;
+  flex-shrink: 0;
+  margin-top: 0.2rem;
+}
+
+.contact-content {
+  text-align: left;
+  max-width: 23rem;
+}
+
+.contact-label {
+  font-weight: 600;
+  font-size: 1.4rem;
+  margin-bottom: 0.4rem;
+}
+
+.contact-value {
+  font-size: 1.4rem;
+}
+
+.nav-container {
+  display: flex;
+  flex-direction: column;
+  gap: 4.2rem;
+  margin-bottom: 4.8rem;
+}
+
+.nav-section {
+  text-align: left; 
+}
+
+.nav-title {
+  font-family: 'Libre Baskerville', serif;
+  font-size: 2rem;
+  font-weight: 400;
+  margin-bottom: 2.2rem;
+}
+
+.nav-links {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  align-items: flex-start;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: var(--text-color);
+  font-size: 1.4rem;
+  transition: color 0.2s ease;
+  line-height: 1.4;
+}
+
+.nav-link:hover {
+  color: var(--purple-brand);
+}
+
+.social-icons {
+  display: flex;
+  gap: 2rem;
+  margin-bottom: 2.4rem;
+  justify-content: flex-start; 
+}
+
+.social-icon {
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.social-icon:hover {
+  transform: translateY(-0.2rem);
+  opacity: 0.9;
+}
+
+.social-svg {
+  width: 3rem;
+  height: 3rem;
+}
+
+.copyright {
+  font-size: 1.4rem;
+  text-align: left;
+}
+
+
+@media (min-width: 768px) {
+  .footer {
+    padding: 4.8rem 8.2rem 2rem 8.2rem;
+    align-items: start; 
+  }
+
+  .footer-decorative-circle-right{
+    width: 36rem;
+    height: 36rem;
+    top: 37rem;
+    right: 2rem;
+    border: 28px solid white;
+  }
+
+  .footer-decorative-circle-left{
+    position: absolute;
+    width: 23rem;
+    height: 23rem;
+    border-radius: 100%;
+    top: 13rem;
+    left: 9rem;
+    border: 28px solid white;
+  }
+
+  .container {
+    max-width: 120rem;
+    align-items: start; 
+  }
+
+
+  .logo-section {
+    justify-content: start;
+    margin-bottom: 3.4rem;
+  }
+
+  .logo {
+    width: 14rem;
+  }
+
+
+  .description {
+    font-size: 1.6rem;
+    margin-bottom: 3.2rem;
+    max-width: 34rem;
+    text-align: start;
+  }
+
+  .contact-info {
+    margin-bottom: 4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 3.8rem;
+  }
+
+  .contact-item {
+    gap: 1.6rem;
+    margin-bottom: 2rem;
+    justify-content: center;
+  }
+
+  .icon {
+    width: 2.4rem;
+    height: 2.4rem;
+  }
+
+  .contact-label,
+  .contact-value {
+    font-size: 1.6rem;
+  }
+
+  .nav-container {
+    flex-direction: row;
+    justify-content: center;
+    gap: 8rem;
+    margin-bottom: 4rem;
+    width: 100%;
+  }
+
+  .nav-section {
+    text-align: left; 
+  }
+
+  .nav-links {
+    align-items: flex-start;
+    gap: 1.6rem;
+  }
+
+  .nav-title {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  .nav-link {
+    font-size: 1.6rem;
+  }
+
+  .footer-bottom{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10rem;
+    width: 100%;
+  }
+
+  .social-icons {
+    gap: 2rem;
+    justify-content: start;
+    margin-bottom: 0;
+  }
+
+  .social-svg {
+    width: 3rem; 
+    height: 3rem;
+  }
+
+  .copyright {
+    font-size: 1.4rem;
+    text-align: left;
+  }
+}
+
+
+@media (min-width: 1024px) {
+  .footer {
+    padding: 10.6rem 8.2rem 4rem 8.2rem;
+    align-items: center;
+  }
+
+  .container {
+    max-width: 120rem;
+    align-items: center;
+  }
+
+  .footer-content {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    gap: 6rem;
+    margin-bottom: 5.8rem;
+  }
+
+  .contact-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: none; 
+    gap: 1.6rem;
+  }
+
+  .contact-label {
+    width: fit-content;
+    white-space: nowrap;
+  }
+
+  .contact-value{
+    width: 100%;
+  }
+
+  .left-column {
+    display: flex;
+    flex-direction: column;
+    gap: 3.2rem;
+  }
+
+  .logo-section {
+    justify-content: flex-start;
+    margin-bottom: 0;
+  }
+
+  .logo {
+    width: 16rem;
+  }
+
+  .description {
+    text-align: left;
+    margin: 0;
+    max-width: 48rem;
+  }
+
+  .contact-info {
+    margin-bottom: 0;
+    align-items: flex-start; 
+    gap: 0;
+  }
+
+  .contact-item {
+    justify-content: flex-start;
+  }
+  .nav-container {
+    display: contents; 
+  }
+
+  .nav-title{
+    font-size: 2.4rem;
+    margin-bottom: 4.6rem;
+  }
+
+  .nav-links{
+    gap: 2rem;
+  }
+
+  .footer-decorative-circle-right{
+    top: 8rem;
+    right: 2rem;
+  }
+
+
+ 
+
+}

@@ -1,0 +1,158 @@
+
+.we-can-help-section-section {
+  padding: 4.6rem ;
+  overflow: hidden;
+  position: relative;
+}
+
+.we-can-help-section-decorative-circle-top{
+  position: absolute;
+  width: 29rem;
+  height: 29rem;
+  top: 11rem;
+  right: -12rem;
+  border-radius: 100%;
+  border: 28px solid rgba(184, 184, 184, 0.15);
+}
+
+.title {
+  font-family: 'Libre Baskerville', serif;
+  font-size: 2.4rem;
+  font-weight: 400;
+  text-align: start;
+  margin-bottom: 3.8rem;
+}
+
+.content-mobile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.content-desktop {
+  display: none;
+}
+
+.paragraph {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.6rem;
+  text-align: start;
+  margin-bottom: 3.2rem;
+}
+
+.paragraph-middle{
+  margin-bottom: 0;
+}
+
+.paragraph:last-of-type {
+  margin-bottom: 6rem;
+}
+
+.image-container {
+  margin: 6.2rem -4.6rem;
+  text-align: center;
+}
+
+.section-image {
+  width: 100%;
+  height: auto;
+}
+
+@media (min-width: 768px) {
+  .we-can-help-section-section{
+  padding: 6.6rem 0rem;
+  margin: 0 auto;
+  }
+
+  .content-mobile{
+  max-width: 44rem;
+  margin: 0 auto;
+
+  }
+
+  .we-can-help-section-decorative-circle-top{
+    width: 39rem;
+    height: 39rem;
+    top: 8rem;
+    right: -12rem;
+  }
+
+  .title {
+      font-size: 3.2rem;
+      padding-bottom: 6.4rem;
+      max-width: 44rem;
+      margin: 0 auto ;
+      
+  }
+  
+  .paragraph {
+    margin-bottom: 4.6rem;
+  }
+  
+  .paragraph-middle {
+    margin-bottom: 0;
+  }
+
+  .section-image {
+    width: 100vw;
+  }
+}
+
+@media (min-width: 1024px) {
+  .we-can-help-section-section {
+    display: flex;
+    flex-direction: column;
+    padding: 8.8rem 8.2rem 0 8.2rem;
+    width: 100%;
+    max-width: 129rem;  
+  }
+  
+  .title {
+      margin-bottom: 2rem;
+      text-align: center;
+  }
+  
+  .content-mobile {
+      display: none;
+  }
+  
+  .content-desktop {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      width: 100%;
+  }
+
+  .we-can-help-section-text-content {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-self: center;
+    align-items: center;
+    max-width: 112rem; 
+  }
+
+  .paragraph {
+    width: 100%;
+    margin-bottom: 2.4rem; 
+    text-align: center;
+  }
+
+  .paragraph:last-of-type {
+    margin-bottom: 3.4rem;
+  }
+
+  .image-container{
+    margin: 4.6rem 0 0 0 ;
+
+  }
+
+  .section-image{
+    width: 100%;
+    height: auto;
+  }
+
+  .we-can-help-section-decorative-circle-top{
+    display: none;
+  }
+}
