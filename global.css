@@ -39,12 +39,14 @@ body {
 }
 
 
-body.preload {
-  visibility: hidden;
+body.preload .navbar__container {
+  opacity: 0;
+  pointer-events: none;
 }
-body {
-  visibility: visible;
-  transition: visibility 0s linear 0s;
+body:not(.preload) .navbar__container {
+  opacity: 1;
+  transition: opacity 0.3s ease;
+  pointer-events: auto;
 }
 
 
