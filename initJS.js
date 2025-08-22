@@ -5,18 +5,29 @@ async function loadSection(el) {
 }
 
 function loadScript(src) {
-  const script = document.createElement("script");
-  script.src = src;
-  document.body.appendChild(script);
+  return new Promise((resolve, reject) => {
+    const script = document.createElement("script");
+    script.src = src;
+    script.onload = resolve;
+    script.onerror = reject;
+    document.body.appendChild(script);
+  });
 }
 
 async function loadAllSections() {
   const sections = document.querySelectorAll("[data-include]");
   await Promise.all(Array.from(sections).map(loadSection));
+
+
   document.body.classList.remove("preload");
-  loadScript("src/components/navbar/navbar.js");
-  loadScript("src/sections/hero/hero-section.js");
-  loadScript("src/sections/faq/faq-section.js");
+
+  await Promise.all([
+    loadScript("src/components/navbar/navbar.js"),
+    loadScript("src/sections/hero/hero-section.js"),
+    loadScript("src/sections/faq/faq-section.js")
+  ]);
+
+  // Inicializa animaciones
   AOS.init({ once: true });
 }
 

@@ -40,14 +40,11 @@ body {
 
 
 body.preload {
-  opacity: 0;
-  animation: fadeIn 1s ease-in forwards; 
+  visibility: hidden;
 }
-
-@keyframes fadeIn {
-  to {
-    opacity: 1;
-  }
+body {
+  visibility: visible;
+  transition: visibility 0s linear 0s;
 }
 
 
